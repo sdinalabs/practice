@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatFlow — Вход</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+    <div class="auth-wrap">
+        <div class="auth-card">
+            <div class="auth-logo">ChatFlow</div>
+            <div class="tabs">
+                <button class="tab active" data-tab="login">Войти</button>
+                <button class="tab" data-tab="register">Регистрация</button>
+            </div>
+
+            <div id="login-form">
+                <div class="field">
+                    <label>Имя пользователя</label>
+                    <input type="text" id="l-username" placeholder="username">
+                </div>
+
+                <div class="field">
+                    <label>Пароль</label>
+                    <input type="password" id="l-password" placeholder="••••••">
+                </div>
+                <button class="btn-primary" id="login-btn">Войти</button>
+            </div>
+
+            <div id="register-form" class="hidden">
+                <div class="field">
+                    <label>Имя пользователя</label>
+                    <input type="text" id="r-username">
+                </div>
+
+                <div class="field">
+                    <label>Email</label>
+                    <input type="email" id="r-email">
+                </div>
+
+                <div class="field">
+                    <label>Пароль (мин. 6 символов)</label>
+                    <input type="password" id="r-password">
+                </div>
+                <button class="btn-primary" id="register-btn">Зарегистрироваться</button>
+            </div>
+            <div id="auth-error" class="auth-error hidden"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+

@@ -1,0 +1,108 @@
+﻿/* === auth.css === */
+.auth-wrap {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-card {
+    width: 400px;
+    padding: 40px;
+    border-radius: var(--radius);
+    background: var(--navy-mid);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+}
+
+.auth-logo {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--blue);
+    margin-bottom: 32px;
+}
+
+.tabs {
+    display: flex;
+    gap: 4px;
+    background: var(--navy);
+    border-radius: 8px;
+    padding: 4px;
+    margin-bottom: 24px;
+}
+
+.tab {
+    flex: 1;
+    padding: 9px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+    .tab.active {
+        background: var(--blue);
+        color: #fff;
+    }
+
+.field {
+    position: relative;
+    margin-bottom: 14px;
+}
+
+    .field input {
+        width: 100%;
+        padding: 13px 14px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--navy);
+        color: var(--text);
+        font-size: 14px;
+        outline: none;
+    }
+
+        .field input:focus {
+            border-color: var(--blue);
+        }
+
+    .field label {
+        position: absolute;
+        left: 14px;
+        top: -9px;
+        font-size: 11px;
+        background: var(--navy-mid);
+        padding: 0 4px;
+        color: var(--muted);
+        font-weight: 600;
+    }
+
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: var(--blue);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+    .btn-primary:hover {
+        background: var(--blue-dark);
+    }
+
+.auth-error {
+    color: var(--rose);
+    font-size: 13px;
+    text-align: center;
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(244,63,94,.1);
+}
